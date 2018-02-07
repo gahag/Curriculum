@@ -1,0 +1,164 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{calc}
+\usepackage{caption}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[hyphens]{url}
+\usepackage{parskip}
+\usepackage[usenames, dvipsnames]{xcolor}
+\usepackage[big]{layaureo} % better formatting of the A4 page, an alternative is fullpage
+\usepackage{supertabular}  % for Grades
+\usepackage{titlesec}      % custom \section
+\usepackage[absolute]{textpos}
+\RequirePackage{color, graphicx}
+
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks, breaklinks, urlcolor = linkcolour, linkcolor = linkcolour}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries\scshape\raggedright}{}{0em}{}[]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\titlespacing*{\subsection}{0pt}{3pt}{0pt}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+\hyphenation{im-pre-se}
+
+\newcommand{\tabitem}{$\;\circ\;$}
+\renewcommand{\labelitemi}{$\circ$}
+
+\newcommand{\cpp}{C\protect\scalebox{0.8}{\protect\raisebox{0.4ex}{++}}}
+\renewcommand\#{\protect\scalebox{0.8}{\protect\raisebox{0.4ex}{\char"0023}}}
+
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+%--------------------TITLE-------------
+\par{
+  \centering{
+    \Huge \textsc{Gabriel Bastos -- Currículo}
+	}
+  \bigskip
+  \par
+}
+
+%--------------------SECTIONS-----------------------------------
+\section{Dados Pessoais}
+
+\begin{tabular}{rl}
+  \textsc{Nome Completo:} & Gabriel Silva Bastos \\
+  \textsc{Idade:}         & 20 anos \\
+  \textsc{Endereço:}      & Rua dos Assistentes Sociais, 294, Alípio de Melo, Belo Horizonte. \\
+  \textsc{Telefone:}      & (31) 99286\,-\,2772 \\
+  \textsc{email:}         & \href{mailto:gabriel.s.b@live.com}{gabriel.s.b@live.com}
+\end{tabular}
+
+
+\section{Experiência Profissional}
+\begin{tabular}{r|p{12.3cm}}
+  \textsc{Dez. 2017} & \textsc{Universidade Federal de Minas Gerais} \\
+  \textsc{Mar. 2017} & Monitor da disciplina Programação de Computadores \\[5pt]
+  & Atividades desenvolvidas: \\
+  & \tabitem Assistência aos alunos nas atividades práticas da disciplina. \\
+  & Conteúdos abordados: \\
+  & \tabitem Circuitos sequenciais e combinacionais. \\
+  & \tabitem Programação em \textit{Scilab}. \\
+  
+  \multicolumn{2}{c}{} \\
+  \textsc{Set. 2016} & \textsc{BRAE Biotecnologia} \\
+  \textsc{Nov. 2015} & Analista de sistemas júnior \\[5pt]
+  & Atividades desenvolvidas: \\
+  & \tabitem \makecell[lt] {
+              Manutenção e desenvolvimento do \textit{software desktop} de operação do \\
+              \href{http://www.ferox.vet.br/pt-br/produtos/ecg-veterinario.aspx}{eletrocardiógrafo}.
+             }\\
+  & \tabitem \makecell[lt]{
+              Manutenção e desenvolvimento dos \textit{softwares desktop} e \textit{mobile} de operação do \\
+              \href{http://www.ferox.com.br/pt-br/produtos/monitor-multiparametrico/monitorfx4000.aspx}{monitor multiparamétrico}.
+             }\\[-3pt]
+  & Tecnologias utilizadas: \\
+  & \tabitem Ambiente de desenvolvimento \textit{Microsoft Visual Studio}. \\
+  & \tabitem Linguagem C\#. \\
+  & \tabitem \textit{Microsoft Windows Presentation Foundation}. \\
+  & \tabitem \textit{Xamarin}. \\
+  
+  \multicolumn{2}{c}{} \\
+  \textsc{Jul. 2015} & \textsc{BRAE Biotecnologia} \\
+  \textsc{Fev. 2015} & Estágio -- Técnico em eletrônica \\[5pt]
+  & Atividades desenvolvidas: \\
+  & \tabitem Participação no desenvolvimento do projeto eletrônico de um \href{http://www.ferox.vet.br/pt-br/produtos/ecg-veterinario.aspx}{eletrocardiógrafo}. \\
+  & \tabitem \makecell[lt]{
+              Projeto e desenvolvimento do firmware responsável pela comunicação do \\
+              eletrocardiógrafo com o computador.
+             } \\
+  & Tecnologias utilizadas: \\
+  & \tabitem Ambiente de desenvolvimento para plataformas embarcadas \textit{Keil uVision}. \\
+  & \tabitem Linguagem C.
+\end{tabular}
+
+
+\section{Formação Acadêmica}
+\begin{tabular}{r|l}
+  \textsc{2020} & \textsc{Universidade Federal de Minas Gerais} \\
+  \textsc{2016} & Cursando bacharelado em Sistemas de Informação \\
+  
+  \multicolumn{2}{c}{} \\
+  \textsc{2015} & \textsc{BRAE Biotecnologia} \\
+  \textsc{2013} & Técnico em eletrônica \\
+\end{tabular}
+
+
+\section{Competências}
+\begin{tabular}{r|l}
+  \textsc{Inglês} & Leitura, escrita e audição fluentes. \\
+  & Pronúncia intermediária. \\
+  
+  \multicolumn{2}{c}{} \\
+  \textsc{Linguagens de} & Possuo familiaridade com as seguintes linguagens: \\
+  \textsc{Programação}& C, \cpp, C\#, Haskell, F\#, Python. \\
+  
+  \multicolumn{2}{c}{} \\
+  \textsc{Tecnologias} & Possuo familiaridade com as seguintes tecnologias: \\
+  & git, github, bash, linux, visual studio, .NET framework, emacs, \\
+  & stack(Haskell), parsec(Haskell).
+\end{tabular}
+
+
+\section{Interesses Pessoais}
+Sou apaixonado por tecnologia, e programo desde os 14 anos. \\
+Algumas das áreas e tecnologias que despertam meu interesse:
+\vspace{-3pt}
+\begin{itemize}
+  \setlength\itemsep{-3pt}
+  \item Linguagens de programação e compiladores.
+  \item \emph{Parsers}, sistemas de tipos, paradigmas de programação.
+  \item Análise estática e otimização de programas, \emph{LLVM}, \emph{JIT compilers}.
+  \item Ferramentas e técnicas de programação e engenharia de \emph{software} em geral.
+\end{itemize}
+
+\subsection{Projetos Pessoais}
+Todos meus projetos pessoais podem ser encontrados na minha \href{https://github.com/gahag/}{página no github}. \\[10pt]
+\begin{tabular}{r|l}
+  \textsc{FSQL} & \url{https://github.com/gahag/fsql} \\[3pt]
+  & FSQL é uma ferramenta escrita em Haskell para realizar consultas \\
+  & ao sistema de arquivos utilizando uma sintaxe semelhante a SQL. \\
+  
+  \multicolumn{2}{c}{} \\
+  \textsc{TPC} & \url{https://github.com/gahag/tpc} \\[3pt]
+  & TPC é um parser combinator para C++ baseado em templates. \\
+\end{tabular}
+
+
+\end{document}
