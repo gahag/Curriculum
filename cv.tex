@@ -15,6 +15,9 @@
 \usepackage{supertabular}  % for Grades
 \usepackage{titlesec}      % custom \section
 \usepackage[absolute]{textpos}
+\usepackage[norule]{footmisc}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
 \RequirePackage{color, graphicx}
 
 \usepackage{hyperref}
@@ -48,7 +51,7 @@
 %--------------------TITLE-------------
 \par{
   \centering{
-    \Huge \textsc{Gabriel Bastos -- Curriculum}
+    \Huge \textsc{Gabriel Bastos}
 	}
   \bigskip
   \par
@@ -60,7 +63,7 @@
 \begin{tabular}{rl}
   \textsc{Name:}      & Gabriel Silva Bastos \\
   \textsc{Birthdate:} & 5 Jun 1997 \\
-  \textsc{Address:}   & Rua dos Assistentes Sociais, 294 -- Alípio de Melo -- Belo Horizonte -- MG -- Brazil. \\
+  \textsc{Address:}   & Belo Horizonte -- MG -- Brazil. \\
   \textsc{Phone:}     & \texttt{+} 55 (31) 99286\,--\,2772 \\
   \textsc{e-mail:}    & \href{mailto:gabriel.s.b@live.com}{gabriel.s.b@live.com}
 \end{tabular}
@@ -68,7 +71,7 @@
 
 \section{Work Experience}
 \begin{tabular}{r|p{12.3cm}}
-  \textsc{Current} & \textsc{MAV Tecnology} \\
+  \textsc{Nov. 2020} & \textsc{MAV Tecnology} \\
   \textsc{Apr. 2019} & Software Engineer \\[5pt]
   & Activities and technologies: \\
   & \tabitem Maintenance of legacy systems. \\
@@ -83,13 +86,13 @@
   & \tabitem Scientific paper writing. \\
   & Topics: \\
   & \tabitem Data mining and analysis, linux infrastructure. \\
-  & \tabitem Python and Bash programming. \\
+  & \tabitem Python and Bash scripting. \\
 
   \multicolumn{2}{c}{} \\
   \textsc{Mar. 2018} & \textsc{Federal University of Minas Gerais} \\
   \textsc{Mar. 2017} & Computer Programming Prefect \\[5pt]
   & Activities: \\
-  & \tabitem Assistence to the students in practical activities. \\
+  & \tabitem Assistance to students in practical activities. \\
   & Topics: \\
   & \tabitem Sequential and combinational circuits. \\
   & \tabitem Scilab programming. \\
@@ -99,32 +102,32 @@
   \textsc{Nov. 2015} & Junior systems analyst \\[5pt]
   & Activities: \\
   & \tabitem \makecell[lt] {
-              Software development of the desktop application for an
+              Desktop software development for an
               \href{http://www.ferox.vet.br/pt-br/produtos/ecg-veterinario.aspx}{electrocardiograph}.
              }\\
   & \tabitem \makecell[lt]{
-              Software development of the desktop application for a
+              Desktop software development for a
               \href{http://www.ferox.com.br/pt-br/produtos/monitor-multiparametrico/monitorfx4000.aspx}{multi-parameter monitor}.
-             }\\[-10pt]
+             }\\
   & Technologies: \\
   & \tabitem C\# programming. \\
   & \tabitem Microsoft Windows Presentation Foundation. \\
   
   \multicolumn{2}{c}{} \\
   \textsc{Jul. 2015} & \textsc{BRAE Biotecnology} \\
-  \textsc{Fev. 2015} & Internship -- Electronics technician \\[5pt]
+  \textsc{Feb. 2015} & Internship -- Electronics technician \\[5pt]
   & Activities: \\
-  & \tabitem Participation in the electronic project development of an \href{http://www.ferox.vet.br/pt-br/produtos/ecg-veterinario.aspx}{electrocardiograph}. \\
-  & \tabitem Software development of the firmware for the electrocardiograph. \\
+  & \tabitem Co-development of an \href{http://www.ferox.vet.br/pt-br/produtos/ecg-veterinario.aspx}{electrocardiograph}. \\
+  & \tabitem Firmware software development for the electrocardiograph. \\
   & Technologies: \\
   & \tabitem Keil $\mu$ \kern-5pt Vision embbeded development environment. \\
-  & \tabitem C programming.
+  & \tabitem Embedded C programming.
 \end{tabular}
 
 
 \section{Education}
 \begin{tabular}{r|l}
-  \textsc{2021} & \textsc{Federal University of Minas Gerais} \\
+  \textsc{2022} & \textsc{Federal University of Minas Gerais} \\
   \textsc{2016} & Undergraduate in Information Systems \\
   
   \multicolumn{2}{c}{} \\
@@ -135,8 +138,7 @@
 
 \section{Skills}
 \begin{tabular}{r|l}
-  \textsc{English} & Proficient reading, writing and hearing. \\
-  & Intermediary pronounce. \\
+  \textsc{English} & Advanced reading, writing, hearing and speaking. \\
   
   \multicolumn{2}{c}{} \\
   \textsc{Programming} & I'm familiar with the following programming languages: \\
@@ -144,36 +146,49 @@
   
   \multicolumn{2}{c}{} \\
   \textsc{Technologies} & I'm familiar with the following technologies: \\
-  & Linux, bash, git, github, docker, .NET framework, emacs, \\
-  & parsec(Haskell).
+  & Linux, bash, git, github, docker, emacs.
 \end{tabular}
 
 
 \section{Personal Interests}
-I love technology, and have been programming since I was 14 years old. \\
-Some of the topics and technologies of my interest:
+I love computers and have been programming since I was 14 years old. \\
+Some of the topics of my interest:
 \vspace{-3pt}
 \begin{itemize}
   \setlength\itemsep{-3pt}
   \item Programming languages and compilers.
-  \item Parsers, type systems, programming paradigms.
-  \item Static analysis and optimizations, LLVM, JIT compilers.
-  \item Programming tools and software engineering techniques in general.
-\end{itemize}
+  \item Type systems, programming paradigms.
+  \item Systems programming.
+  \item Clean code and software engineering techniques in general.
+  \item Open source software.
+\end{itemize} \vspace{5pt}
 
 \subsection{Projects}
-All of my projects can be found at my \href{https://github.com/gahag/}{github}. \\[10pt]
+Besides personal projects, I also have made contributions to at least 15 open source
+repositories. All of my activity can be found at my \href{https://github.com/gahag/}{github}.
+Here are some of my projects: \\
 \begin{tabular}{r|l}
+  \multicolumn{2}{c}{} \\
+  \textsc{Hush} & \url{https://github.com/gahag/hush} \\[3pt]
+  & Hush is a modern Unix shell based on the Lua programming language. \\
+  & Currently a work in progress. \\
+
+  \multicolumn{2}{c}{} \\
+  \textsc{DCI} & \url{https://github.com/gahag/dci} \\[3pt]
+  & DCI-Closed \footnote{\url{http://hpc.isti.cnr.it/~claudio/papers/2004_FIMI_dci_closed.pdf}}:
+  a frequent closed itemset mining algorithm, implemented in Rust.  \\
+
+  \multicolumn{2}{c}{} \\
+  \textsc{Bgrep} & \url{https://github.com/gahag/bgrep} \\[3pt]
+  & Bgrep is a \textit{grep} spin for binary patterns and files. \\
+
+  \multicolumn{2}{c}{} \\
   \textsc{FSQL} & \url{https://github.com/gahag/fsql} \\[3pt]
   & FSQL is a tool written in haskell to query the file system with SQL-like syntax. \\
   
   \multicolumn{2}{c}{} \\
   \textsc{TPC} & \url{https://github.com/gahag/tpc} \\[3pt]
   & TPC is a template based parser combinator for \cpp. \\
-
-  \multicolumn{2}{c}{} \\
-  \textsc{Bgrep} & \url{https://github.com/gahag/bgrep} \\[3pt]
-  & Bgrep is a \textit{grep} spin for binary patterns and files. \\
 \end{tabular}
 
 
